@@ -1,0 +1,116 @@
+$def with(page)
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="cache-Control: max-age=84600">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href=""https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Registro de Usuarios</title>
+  </head>
+  <body bgcolor="silver">
+      <font color="teal" face="Trebuchet MS">
+      <br><font size=8></font>
+  <body>
+      <!-- Image and text -->
+<nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          
+        </a>
+      </nav>
+        <div class="container-fluid">
+            $:page
+        </div>
+    
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+      // Check that service workers are registered
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('../../static/js/sw.js');
+        });
+      }
+      </script>
+    <script rel="preload" as="script" src="../../static/js/lazysizes.min.js" async></script>
+    <script rel="preload" as="script" src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script rel="preload" as="script" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script rel="preload" as="script" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<!--Comentario en HTML -->
+
+<meta charset="UTF-8"> 
+        <TITle>Formulario de registro</TITle>
+        <link rel="stylesheet" href="../../static/css/estilos.css">
+    </head>
+    <body>
+        <center><h2>Formulario de registro</h2></center>
+        <form action="registrar.php" method="POST"
+        class="form-register">
+            <h2>Crea una cuenta</h2>
+            <div class="contenedor-inputs"></div>
+                <input type="text" name="nombre"
+                placeholder="Nombre" class="input-48">
+                <input type="text" name="apellidos"
+                placeholder="Apellidos" class="input-48">
+                <input type="email" name="correo"
+                placeholder="correo" class="input-100">
+                <input type="text" name="usuario"
+                placeholder="Usuario" class="input-48">
+                <input type="text" name="clave"
+                placeholder="Contraseña" class="input-48">
+                <input type="text" name="telefono"
+                placeholder="Telefono" class="input-100">
+                <input type="submit" value="Registrar">
+                <p>¿Ya tienes una cuenta? <a href="validar">Ingresa aquí</a></p>
+                <p></p>
+            </div>
+           
+        </form>
+        <center><h2>Alumno registrado</h2></center>
+        <form action="registrar.php" method="POST"
+        class="form-register">
+            <h2>Datos</h2>
+            <div class="contenedor-inputs"></div>
+                <input type="text" name="nombre"
+                placeholder="Luis" class="input-48">
+                <input type="text" name="apellidos"
+                placeholder="Hernandez" class="input-48">
+                <input type="email" name="correo"
+                placeholder="luis@unid" class="input-100">
+                <input type="text" name="usuario"
+                placeholder="001" class="input-48">
+                <input type="text" name="clave"
+                placeholder="******" class="input-48">
+                <input type="text" name="telefono"
+                placeholder="5562154250" class="input-100">
+                <input type="submit" value="Regresar">
+                <p>Esto es correcto<a href="validar">Ingresa aquí</a></p>
+                <p></p>
+            </div>
+           
+        </form>
+       
+       <h2>Actualizar Registro</h2>
+<br>
+Nombre<br>
+<INPUT TYPE="TEXT" NAME="nombre"><br>
+Apellidos<br>
+<INPUT TYPE="TEXT" NAME="apellidos"><br>
+email<br>
+<INPUT TYPE="TEXT" NAME="correo"><br>
+clave<br>
+<INPUT TYPE="TEXT" NAME="******"><br>
+Teléfono<br>
+<INPUT TYPE="TEXT" NAME="telefono"><br>
+<INPUT TYPE="SUBMIT" value="Actualizar">
+</FORM>
+</div>
+
+        </form>
+  </body>
+</html>
